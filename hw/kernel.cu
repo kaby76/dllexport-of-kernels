@@ -7,10 +7,12 @@
 cudaError_t addWithCuda(int *c, const int *a, const int *b, unsigned int size);
 
 __declspec(dllimport) __global__ void doKernel2(int *c, const int *a, const int *b);
+//__declspec(dllimport) __device__ void fun(int *c, const int *a, const int *b);
 
 __global__ void addKernel(int *c, const int *a, const int *b)
 {
     int i = threadIdx.x;
+//	fun(c, a, b);
     c[i] = a[i] + b[i];
 }
 
