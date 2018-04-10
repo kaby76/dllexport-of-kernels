@@ -1,6 +1,7 @@
 # dllexport-of-kernels
 This is an example of what and how you can compile and separately link CUDA
-programs and libraries. Unfortunately, I don't think it's been throughly thought out,
+programs and libraries. Unfortunately, I don't think NVIDIA throughly thought the
+various permutations of separate compilation and linking out,
 as there are some things you can do, and some thing you can't.
 
 This VS 2017 solution contains two projects:
