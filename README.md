@@ -24,4 +24,5 @@ in Sep, Hw cannot link with Sep.
 Furthermore, there doesn't seem to be a way to load Sep.dll using the CUDA Driver API.
 This is unfortunately a major limitation in accessing the code in Sep.lib/dll. If you want
 to pre-compile a CUDA library, the only way I found that works
-is a static .LIB library without the -dlink option.
+is a static .LIB library without the -dlink option. I also believe the -dc option must be used
+for NVCC.
