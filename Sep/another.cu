@@ -11,3 +11,7 @@ __global__ void doKernel4(int *c, const int *a, const int *b)
 	c[i] = c[i] + b[i] + a[i];
 }
 
+__device__ void funny()
+{
+
+}

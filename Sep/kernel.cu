@@ -4,10 +4,13 @@
 
 #include <stdio.h>
 
+__device__ void funny();
+
 __declspec(dllexport) __global__ void doKernel2(int *c, const int *a, const int *b)
 {
 	int i = threadIdx.x;
 	c[i] = c[i] + b[i] + a[i];
+	funny();
 }
 
 // Can declare, but cannot link in "hw".
